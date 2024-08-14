@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Kalkulator untuk menghitung indeks massa tubuh">
     <meta name="author" content="RavaGhiffari">
-</head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
 <body>
     <header>
         <h1 class="main-title">Kalkulator BMI</h1>
@@ -21,25 +22,26 @@
             </p>
             <div class="form-inputboxes">
                 <form class="input-form">
-                    <label for="Gender">Jenis Kelamin</label>
+                    <label for="Gender" id="g-lab">Jenis Kelamin</label>
                     <div class="jenis-kelamin">
                         <input type="radio" name="Gender" id="Male">
                         <label for="Male">Pria</label>
                         <input type="radio" name="Gender" id="Female">
                         <label for="Female">Perempuan</label>
                     </div>
-                    <label for="Height">Tinggi Badan (Cm)</label>
+                    <label for="Height" id="h-lab">Tinggi Badan (Cm)</label>
                     <div class="TB" id="height-placehold">
                         <input type="number" name="Height" id="Height">
                     </div>
-                    <label for="Age">Umur (Tahun)</label>
+                    <label for="Age" id="a-lab">Umur (Tahun)</label>
                     <div class="Umur" id="age-placehold">
                         <input type="number" name="Age" id="Age">
                     </div>
-                    <label for="Weight">Berat Badan (kg)</label>
+                    <label for="Weight" id="w-lab">Berat Badan (kg)</label>
                     <div class="BB" id="weight-placehold">
                         <input type="number" name="Height" id="Height">
                     </div>
+                </form>
             </div>
                     <article>
                         <h4>Keunggulan fitur</h4>
@@ -57,7 +59,7 @@
                             dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².
                         </p>
                     </article>
-                </form>
+                
         </aside>
         <aside class="right-half">
             <article><h3 id="title-hasil">Hasil</h3> </article>
@@ -72,13 +74,28 @@
             <div class="case-analysis" id="case-text">
 
             </div>
-            <button class="">
-
-            </button>
+            <button class="konsul">Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button class="Regis">Registrasi Online Ahli Gizi</button>
+            <article class="last-warn">
+                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.
+                Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
+                berat badan anda.
+            </article>
+            <div class="penyakit-kemungkinan">
+                <div class="text-penyakit">
+                    Beberapa penyakit yang berasal dari kegemukan
+                    <ul>
+                        <li>Diabetes</li>
+                        <li>Hipertensi</li>
+                        <li>Sakit Jantung</li>
+                        <li>Osteoarthritis</li>
+                    </ul>
+                </div>
+            </div>
         </aside>
     </main>
     <footer>
-
+        Made by RavaGhiffari
     </footer>
 </body>
 </html>

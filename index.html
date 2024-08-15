@@ -32,19 +32,21 @@
                     <br>
                     <label for="Height" id="h-lab">Tinggi Badan (Cm)</label>
                     <div class="TB" id="height-placehold">
-                        <input type="number" name="Height" id="Height">
+                        <input type="number" name="Height" id="Height" required>
                     </div>
                     <label for="Age" id="a-lab">Umur (Tahun)</label>
                     <div class="Umur" id="age-placehold">
-                        <input type="number" name="Age" id="Age">
+                        <input type="number" name="Age" id="Age" required>
                     </div>
                     <label for="Weight" id="w-lab">Berat Badan (Kg)</label>
                     <div class="BB" id="weight-placehold">
-                        <input type="number" name="Height" id="Height">
+                        <input type="number" name="Height" id="Height" required>
                     </div>
+                    <button class="submit-btn" onclick="calculateBMI()">Submit</button>
+                    <span><button class="res-btn" onclick="reset()">Reset</button></span>
                 </form>
             </div>
-                    <article>
+                    <article class="main-article-left">
                         <h4>Keunggulan fitur</h4>
                         <ol>
                             <li>Menghitung berat badan</li>
@@ -59,6 +61,12 @@
                             Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) 
                             dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².
                         </p>
+                        <br>
+                        <article class="last-warn">
+                            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.
+                            Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
+                            berat badan anda.
+                        </article>
                     </article>
                 
         </aside>
@@ -77,26 +85,26 @@
             </div>
             <button class="konsul">Konsultasi Ahli Gizi Via Aplikasi</button>
             <button class="Regis">Registrasi Online Ahli Gizi</button>
-            <article class="last-warn">
-                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.
-                Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
-                berat badan anda.
-            </article>
-            <div class="penyakit-kemungkinan">
-                <div class="text-penyakit">
-                    Beberapa penyakit yang berasal dari kegemukan
-                    <ul>
-                        <li>Diabetes</li>
-                        <li>Hipertensi</li>
-                        <li>Sakit Jantung</li>
-                        <li>Osteoarthritis</li>
-                    </ul>
-                </div>
+            <div class="bmi-info">
+                <h3>Kategori BMI dan Penjelasannya</h3>
+                <p><strong>BMI di bawah 18.5:</strong> <span>Kurus (Underweight)</span></p>
+                <p>Jika BMI Anda berada di bawah 18.5, ini menunjukkan bahwa berat badan Anda kurang dari yang dianggap sehat untuk tinggi badan Anda. Anda mungkin perlu mempertimbangkan untuk menambah berat badan dengan meningkatkan asupan makanan bergizi.</p>
+            
+                <p><strong>BMI 18.5 - 24.9:</strong> <span>Normal (Normal weight)</span></p>
+                <p>BMI di kisaran ini menunjukkan bahwa berat badan Anda dianggap ideal dan sehat untuk tinggi badan Anda. Pertahankan pola makan seimbang dan gaya hidup aktif untuk menjaga berat badan Anda.</p>
+            
+                <p><strong>BMI 25 - 29.9:</strong> <span>Berat Badan Berlebih (Overweight)</span></p>
+                <p>BMI di kisaran ini menunjukkan bahwa berat badan Anda lebih tinggi dari yang dianggap sehat. Anda mungkin perlu mempertimbangkan untuk mengurangi berat badan dengan pola makan yang lebih sehat dan aktivitas fisik yang lebih teratur.</p>
+            
+                <p><strong>BMI 30 atau lebih:</strong> <span>Obesitas (Obese)</span></p>
+                <p>Jika BMI Anda 30 atau lebih, ini menunjukkan bahwa Anda memiliki berat badan yang sangat tinggi untuk tinggi badan Anda, yang bisa meningkatkan risiko masalah kesehatan. Penting untuk berbicara dengan tenaga medis untuk mendapatkan saran tentang cara mencapai berat badan yang lebih sehat.</p>
             </div>
+            
         </aside>
     </main>
     <footer>
         Made by RavaGhiffari
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

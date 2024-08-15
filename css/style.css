@@ -66,6 +66,12 @@ input[type='radio']{
     margin-right: 2px;
 }
 
+.jenis-kelamin{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 label {
     margin-bottom: 5px;
     font-weight: bold;
@@ -134,157 +140,58 @@ footer{
     bottom:0;
 }
 
+/*media query untuk tablet dan setipe*/
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
 
+    .left-half, .right-half {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 
+    .container-bmi {
+        height: auto;
+        padding: 15px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    .form-inputboxes input[type="number"], 
+    .form-inputboxes input[type="radio"] {
+        width: calc(100% - 30px);
+    }
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #007BFF;
-    color: white;
-}
+/* Media Query untuk Mobile Devices */
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
 
-.main-title {
-    margin: 0;
-    font-size: 2rem;
-}
+    header {
+        padding: 15px;
+    }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
+    .container-bmi {
+        padding: 10px;
+    }
 
-.left-half, .right-half {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+    .dl-button, .konsul, .Regis {
+        padding: 8px;
+        font-size: 0.875rem;
+    }
 
-.left-half {
-    max-width: 45%;
-}
+    .jenis-kelamin {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.right-half {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 45%;
-}
+    .jenis-kelamin label {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-#Desc {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    input[type="radio"] {
+        margin-bottom: 10px;
+    }
 }
-
-.form-inputboxes {
-    border: 1px solid #007BFF;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #e9faff;
-}
-
-.form-inputboxes input[type="number"], .form-inputboxes input[type="radio"] {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: calc(100% - 30px);
-}
-
-input[type="radio"] {
-    margin-right: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.container-bmi {
-    border: 1px solid #007BFF;
-    background-color: #e9faff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.dl-button, .konsul, .Regis {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.dl-button:hover, .konsul:hover, .Regis:hover {
-    background-color: #0056b3;
-}
-
-.last-warn {
-    font-size: 0.875rem;
-    color: #555;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.penyakit-kemungkinan {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.text-penyakit ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.text-penyakit li {
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #007BFF;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-*/

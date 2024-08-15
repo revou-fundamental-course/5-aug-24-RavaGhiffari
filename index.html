@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Kalkulator untuk menghitung indeks massa tubuh">
     <meta name="author" content="RavaGhiffari">
+    <script src="js/script.js" defer></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
 <body>
@@ -21,7 +22,7 @@
                 Yuk, hitung sekarang di kalkulator BMI ini.
             </p>
             <div class="form-inputboxes">
-                <form class="input-form">
+                <form class="input-form" method="post">
                     <label for="Gender" id="g-lab">Jenis Kelamin</label>
                     <div class="jenis-kelamin">
                         <input type="radio" name="Gender" id="Male">
@@ -40,10 +41,10 @@
                     </div>
                     <label for="Weight" id="w-lab">Berat Badan (Kg)</label>
                     <div class="BB" id="weight-placehold">
-                        <input type="number" name="Height" id="Height" required>
+                        <input type="number" name="Weight" id="Weight" required>
                     </div>
-                    <button class="submit-btn" onclick="calculateBMI()">Submit</button>
-                    <span><button class="res-btn" onclick="reset()">Reset</button></span>
+                    <button class="submit-btn">Submit</button>
+                    <span><button class="res-btn">Reset</button></span>
                 </form>
             </div>
                     <article class="main-article-left">
@@ -71,11 +72,10 @@
                 
         </aside>
         <aside class="right-half">
-            <article><h3 id="title-hasil">Hasil</h3> </article>
+            <article><h3 id="title-hasil">Hasil Perhitungan BMI</h3> </article>
             <div class="container-bmi">
                 <div class="status-bmi">-</div>
                 <div class="bmi-hasil">0.00</div>
-                <div class="bmi-case">-</div>
                 <button class="dl-button">Download Hasil BMI</button>
                 
                 
@@ -103,8 +103,7 @@
         </aside>
     </main>
     <footer>
-        Made by RavaGhiffari
+        © Made by RavaGhiffari
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

@@ -13,6 +13,9 @@ header{
     
 }
 
+#title-hasil{
+    font-size: 30px;
+}
 .main-title{
     margin: 0;
     font-size: 2rem;
@@ -66,9 +69,21 @@ input[type='radio']{
     margin-right: 2px;
 }
 
-.submit-btn, .res-btn{
+.submit-btn{
     background-color: #007BFF;
     color:#fff;
+    border-radius: 15px;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.res-btn{
+    background-color: hsl(0, 0%, 100%);
+    color:#000;
     border-radius: 15px;
     border:none;
     padding: 10px 20px;
@@ -83,17 +98,10 @@ label {
     font-weight: bold;
 }
 
-/*
-<div class="status-bmi">-</div>
-<div class="bmi-hasil">0.00</div>
-<div class="bmi-case">-</div>
-*/
 .status-bmi{
     font-size: 36px;
 }
-.bmi-case{
-    font-size: 20px;
-}
+
 .bmi-hasil{
     font-size: 67px;
 }
@@ -109,8 +117,9 @@ label {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 250px;
+    height: 350px;
     padding: 20px;
+    padding-top: 0px;
     text-align: center;
     margin-bottom: 20px;
     width: 85%;
@@ -138,6 +147,7 @@ label {
     cursor: pointer;
     margin-bottom: 10px;
     text-align:center; 
+    
 }
 
 .dl-button:hover, .konsul:hover, .Regis:hover{
@@ -211,6 +221,10 @@ footer{
 
     .form-inputboxes input[type="number"]{
         width: calc(100% - 30px);
+    }
+    .dl-button, .konsul, .Regis {
+        padding: 8px;
+        font-size: 0.875rem;
     }
 }
 
